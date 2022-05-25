@@ -27,7 +27,8 @@ def countdown(t):
 def main():
     count_chance = 0
     a = random.randint(0,len(words))
-    rand_word = words[a]
+    rand_word = "keels"#words[a]
+    print(rand_word)
     flag = False
     print("\n\nHere character = -1 repsents that the letter does not present in the guessing word")
     print("Here character = 0 repsents that the letter is present in the guessing word but not in corresponding position")
@@ -49,6 +50,8 @@ def main():
                     if x == 0:
                         print("{} = {}\t\t".format(i,-1),end="")
                     elif(ch_word.index(i) != rand_word.index(i) and x == 1):
+                        print("{} = {}\t\t".format(i,0),end="")
+                    elif(ch_word.rindex(i) != rand_word.rindex(i) and x == 2):
                         print("{} = {}\t\t".format(i,0),end="")
                     else:
                         for j in range(len(rand_word)):
