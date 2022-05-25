@@ -16,7 +16,7 @@ print("So, let's start the game...........\n")
 def main():
     count_chance = 0
     a = random.randint(0,len(words))
-    rand_word = "pussy"#words[a]
+    rand_word = words[a]
     flag = False
     print("\n\nHere character = -1 repsents that the letter does not present in the guessing word")
     print("Here character = 0 repsents that the letter is present in the guessing word but not in corresponding position")
